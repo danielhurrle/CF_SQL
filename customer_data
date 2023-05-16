@@ -1,0 +1,28 @@
+CUSTOMER_ID		
+SELECT MIN(customer_id) AS min_customer_id, MAX(customer_id) AS max_customer_id, AVG(customer_id) AS avg_customer_id		
+FROM customer		
+		
+min_customer_id	max_customer_id	avg_customer_id
+1	599	300
+		
+		
+STORE_ID		
+SELECT MIN(store_id) AS min_store_id, MAX(store_id) AS max_store_id, AVG(store_id) AS avg_store_id		
+FROM customer		
+		
+min_store_id	max_store_id	avg_store_id
+1	2	1
+		
+		
+		
+		
+		
+		
+		
+		
+ADDRESS_ID		
+SELECT MIN(address_id) AS min_address_id, MAX(address_id) AS max_address_id, AVG(address_id) AS avg_address_id		
+FROM customer		
+		
+min_address_id	max_address_id	avg_address_id
+5	605	3.047.245.409.015.020.000
