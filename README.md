@@ -11,4 +11,4 @@ Rockbuster Stealth LLC is a movie rental company that used to have stores around
 -  Do sales figures vary between geographic regions?
 
 # Visualizations
-Additional visualizatsions can be found [here]([url](https://public.tableau.com/shared/69Q5JGTX2?:display_count=n&:origin=viz_share_link)).
+Additional visualizations can be found here: [https://public.tableau.com/shared/69Q5JGTX2?:display_count=n&:origin=viz_share_link](url)
