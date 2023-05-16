@@ -1,0 +1,24 @@
+SELECT 		
+D.country, C.city,		
+COUNT(A.customer_id)		
+FROM 		
+customer A		
+INNER JOIN address B ON A.address_ID = B.address_ID		
+INNER JOIN city C ON B.city_ID = C.city_ID		
+INNER JOIN country D ON C.country_ID = D.country_ID 		
+WHERE country IN ('India', 'China', 'United States', 'Japan', 'Mexico', 'Brazil', 'Russian Federation', 'Philippines', 'Turkey', 'Indonesia')		
+GROUP BY city, country		
+ORDER BY count DESC		
+LIMIT 10		
+		
+		
+United States	Aurora	2
+Mexico	Atlixco	1
+China	Xintai	1
+India	Adoni	1
+India	Dhule (Dhulia)	1
+Japan	Kurashiki	1
+China	Pingxiang	1
+Turkey	Sivas	1
+Mexico	Celaya	1
+Brazil	So Leopoldo	1
