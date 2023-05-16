@@ -1,0 +1,33 @@
+SELECT 					
+A.customer_ID, A.first_name, A.last_name, C.city, D.country, SUM(E.amount) AS total_amount					
+FROM 					
+customer A					
+INNER JOIN address B ON A.address_ID = B.address_ID					
+INNER JOIN city C ON B.city_ID = C.city_ID					
+INNER JOIN country D ON C.country_ID = D.country_ID 					
+INNER JOIN payment E ON A.customer_ID = E.customer_ID					
+WHERE city IN ('Aurora',					
+'Atlixco',					
+'Xintai',					
+'Adoni',					
+'Dhule (Dhulia)',					
+'Kurashiki',					
+'Pingxiang',					
+'Sivas',					
+'Celaya',					
+'So Leopoldo')					
+GROUP BY A.customer_ID, A.first_name, A.last_name, C.city, D.country					
+ORDER BY total_amount DESC					
+LIMIT 10					
+					
+customer_id	first_name	last_name	city	country	total_amount
+84	Sara	Perry	Atlixco	Mexico	128.70
+518	Gabriel	Harder	Sivas	Turkey	108.75
+587	Sergio	Stanfield	Celaya	Mexico	102.76
+537	Clinton	Buford	Aurora	United States	98.76
+367	Adam	Gooch	Adoni	India	97.80
+443	Francisco	Skidmore	So Leopoldo	Brazil	93.79
+34	Rebecca	Scott	Kurashiki	Japan	89.76
+169	Erica	Matthews	Pingxiang	China	86.80
+440	Bernard	Colby	Dhule (Dhulia)	India	83.79
+564	Bob	Pfeiffer	Xintai	China	82.78
