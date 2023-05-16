@@ -9,3 +9,6 @@ Rockbuster Stealth LLC is a movie rental company that used to have stores around
 -  Which countries are Rockbuster customers based in?
 -  Where are customers with a high lifetime value based?
 -  Do sales figures vary between geographic regions?
+
+# Visualizations
+Additional visualizatsions can be found [here]([url](https://public.tableau.com/shared/69Q5JGTX2?:display_count=n&:origin=viz_share_link)).
